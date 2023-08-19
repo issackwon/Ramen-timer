@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .header-container {
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-style {
+            width: 110px;
+            height: 110px;
+            margin: 20px;
+            font-size: 40px;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+        
+        .image-style {
+            max-height: 380px;
+            width: auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <br><h1>라면 끓이기 타이머</h1>
+    </div>
+    <div class="button-container">
+        <div id="app"></div>
+        <button class="button-style" onclick="display(),ramen(180)">꼬들</button>
+        <button class="button-style" onclick="display(),ramen(210)">일반</button>
+        <button class="button-style" onclick="display(),ramen(240)">퍼진</button>
+    </div>
+    <div class="image-container">
+        <center>
+            <img class="image-style" id="before" style="display:block" src="https://github.com/issackwon/AISnacks/assets/82852077/fb0e4317-5745-4dd4-89fe-e34b499bcba8" alt="Image">
+            <img class="image-style hidden" id="now" style="display:none" src="https://github.com/issackwon/Ramen-timer/assets/82852077/f722ef80-116e-4338-9274-5a58610d7a36" alt="Image">
+            <img class="image-style hidden" id="done" style="display:none" src="https://github.com/issackwon/Book-Gallery-layout/assets/82852077/be87d401-80e2-4784-8c04-100b5cf52c68" alt="Image">
+        </center>
+        
+    </div>
+    
+    <script>
+        function showAlert() {
+            alert("끝");
+        }
+    </script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
